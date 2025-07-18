@@ -1,30 +1,32 @@
-# Sample Project (Fighting Game)
-It is a sample project to show a part of my coding approaches and knowledge, also some architectures (and patterns) which I've been using here.
+# Overview
 
-You can check the project docs [here](https://github.com/ATHellboy/SampleProject-FightingGame/tree/master/Docs).
+This project is a comprehensive showcase of software architecture, clean coding practices, and advanced design patterns applied to game development in Unity. It is designed to demonstrate a clean, scalable, and event-driven approach to building complex character behaviours.
+It leverages powerful libraries such as [VContainer](https://github.com/hadashiA/VContainer) for Dependency Injection (migrated from [Extenject/Zenject](https://github.com/Mathijs-Bakker/Extenject)) and [MessagePipe](https://github.com/Cysharp/MessagePipe) for its high-performance, decoupled event system.
 
-I didn't make custom character controller for characters and I used Unity Physics and Rigidbody because of time but it supports slopes.
+[**Documents**](https://github.com/ATHellboy/SampleProject-FightingGame/tree/master/Docs)
 
-There are some stuff that are good to be checked besides my coding knowledge. They are:
-
-* Combat system with doc [here](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/CombatSystem.pdf).
-
-* Object Pooling system with doc [here](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/ObjectPoolingSystem.pdf).
-
-* ScriptableObjectDropdown attribute. it has a separate repository that you can check it out [here](https://github.com/ATHellboy/ScriptableObjectDropdown). Also ScriptableObjectMultiSelectDropdown attribute which I didn't use in this project is [here](https://github.com/ATHellboy/ScriptableObjectMultiSelectDropdown).
-
-* It is not a big deal but don't forget to check my State Machine too. Its brief doc is [here](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/StateMachine.pdf).
-
-I used [VContainer](https://github.com/hadashiA/VContainer) for DI and [MessagePipe](https://github.com/Cysharp/MessagePipe) for the event system (Besides Unity built-in events). On previous implementation, I used [Extenject](https://github.com/Mathijs-Bakker/Extenject).
+# Key Features
+* **Combat System:** A robust combat system designed for extensibility. It supports complex, character-specific attacks.
+  * See the [Combat System Documentation](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/CombatSystem.pdf)
+* **Character Controller:** A responsive character controller built on Unity's Rigidbody and physics engine, including reliable support for sloped surfaces.
+* Object Pooling: An object pooling system for managing projectiles and effects, optimizing memory allocation and performance.
+  * See the [Object Pooling Documentation](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/ObjectPoolingSystem.pdf)
+* **State Machine:** A clean and scalable character State Machine for managing player states.
+  * See the [State Machine Documentation](https://github.com/ATHellboy/SampleProject-FightingGame/blob/master/Docs/StateMachine.pdf)
+* **Custom Editor Attributes:** Custom editor attributes like `ScriptableObjectDropdown` to create a more efficient, designer-friendly workflow in the Unity Inspector.
+  * This attribute is also available as a [standalone open-source tool](https://github.com/ATHellboy/ScriptableObjectDropdown)
 
 # Controls
-Player One | Movement : WASD | Jump : Space | Attack : B | Powerup : N | Switch Character : M
+| Control | Player One  | Player Two |
+| --- | --- | --- |
+| Movement | WASD  | Arrow Keys |
+| Jump | Space  | 0 |
+| Attack | B  | 1 |
+| Powerup | N  | 2 |
+| Switch Character | M  | 3 |
 
-Player Two | Movement: Arrow Keys | Jump : 0 | Attack : 1 | Powerup : 2 | Switch Character : 3
-
-Bunny Complex Attack : Attack Button (In Air)
-
-Kitty Complex Attack: Attack Button (After Double Jump)
+* **Bunny Complex Attack:** Attack Button (In Air)
+* **Kitty Complex Attack:** Attack Button (After Double Jump)
 
 # MIT License
 
